@@ -8,4 +8,6 @@ a {
 @tailwind components;
 @tailwind utilities;
 
-
+html .container {
+  max-width: 750px;
+}
