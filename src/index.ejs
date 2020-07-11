@@ -9,26 +9,38 @@ eleventyComputed:
   title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
 ---
 
-<h1 class="font-bold text-3xl"><%= site.title %></h1>
+<div class="container mx-auto pt-8">
+    <%- include /layouts/header.ejs %>
 
-<div>
-  <% list.forEach((post) => { %>
-    <article>
-      <a href="<%= post.url %>"><%= post.data.title %></a>
-      - <%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %>
+    <div class="mt-8">
+        <div class="a-blog-by-section flex align-center">
+            <img src="/assets/images/giancarlo.jpeg"/>
+            <span class="text-sm">
+                A blog by <a href="https://giancarlobuomprisco.com">Giancarlo Buomprisco</a>
+            </span>
+        </div>
+    </div>
 
-      <section>
-        <%- post.templateContent %>
-      </section>
-    </article>
-  <% }) %>
-</div>
+    <div class="mt-8">
+        <% list.forEach((post) => { %>
+            <div class="my-4">
+                <div>
+                    <a class="text-2xl hover:underline" href="<%= post.url %>"><%= post.data.title %></a>
+                </div>
 
-<div class="pt-3">
-  <% if (pagination.previous) { %>
-    <a href="<%= pagination.previous.replace(/index.html$/, "") %>">Newer Posts</a>
-  <% } %>
-  <% if (pagination.next) { %>
-    <a href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts</a>
-  <% } %>
+                <div class="text-grey-800 text-sm">
+                    <%= post.data.description %>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+
+    <div class="pt-3">
+        <% if (pagination.previous) { %>
+            <a href="<%= pagination.previous.replace(/index.html$/, "") %>">Newer Posts</a>
+        <% } %>
+        <% if (pagination.next) { %>
+            <a href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts</a>
+        <% } %>
+    </div>
 </div>

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.post h1 {
+  @apply font-serif text-4xl font-bold mb-2;
+}
+
+.post h2 {
+  @apply font-bold text-3xl mt-8;
+}
+
+.post h3 {
+  @apply font-bold text-2xl mt-6 font-sans;
+}
+
+.post p {
+  @apply leading-8 font-serif text-lg mb-5;
+}
+
+.post pre {
+  @apply mb-5;
+}
+
+.post ul {
+  list-style: circle;
+  @apply pl-10 my-4;
+}
+
+.post li {
+  @apply leading-loose;
+}
+
+.post .user-image img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}

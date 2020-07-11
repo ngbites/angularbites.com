@@ -1,0 +1,11 @@
+.a-blog-by-section {
+  align-items: center;
+}
+
+.a-blog-by-section img {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+  object-fit: cover;
+}

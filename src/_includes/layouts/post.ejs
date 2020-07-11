@@ -2,17 +2,42 @@
 layout: layouts/base.ejs
 ---
 
-<article class="post">
-  <header>
-    <h1 class="font-bold text-3xl"><%= title %></h1>
-    <div class="text-gray-600">
-      <%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %>
-    </div>
+<div class="container mx-auto pt-8">
+  <header class="mb-8">
+    <h2 class="text-2xl">
+      <a href="/"><%= site.title %></a>
+    </h2>
+
+    <h2 class="text-lg mb-8 text-gray-800">
+      <%= site.description %>
+    </h2>
   </header>
-  <section class="pt-3 pb-3">
-    <%- content %>
-  </section>
-  <footer>
-    <a href="/">Back to home</a>
-  </footer>
-</article>
+
+  <article class="post pt-10">
+    <header class="mb-10">
+      <h1 class="text-5xl">
+        <%= title %>
+      </h1>
+
+      <div class="user-image mb-2 flex items-center">
+        <a href="https://twitter.com/@gc_psk" class="flex items-center">
+          <img src="/assets/images/giancarlo.jpeg" />
+          <span class="ml-2 text-gray-600 text-sm">@gc_psk</span>
+        </a>
+
+          <span class="text-gray-600 text-400 ml-1">
+            /  <%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <section class="pt-3 pb-3">
+      <%- content %>
+    </section>
+
+    <footer class="mt-5 pb-5">
+      <a href="/">Back to home</a>
+    </footer>
+  </article>
+</div>
