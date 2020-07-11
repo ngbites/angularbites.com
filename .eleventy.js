@@ -2,14 +2,9 @@ const htmlmin = require('html-minifier');
 const dateFns = require('date-fns');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const CleanCSS = require('clean-css');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
-
-  eleventyConfig.addFilter('cssmin', function (code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
 
   eleventyConfig.addPlugin(lazyImagesPlugin, {
     transformImgPath: (imgPath) => `./src/${imgPath}`,

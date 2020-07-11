@@ -1,9 +1,11 @@
 ---
 pagination:
-  data: collections.posts
-  size: 25
-  alias: list
-  reverse: true
+    data: collections.posts
+    size: 50
+    alias: posts
+    reverse: true
+    filter:
+        - all
 permalink: '<% if (pagination.pageNumber > 0) { %><%= `page${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
 eleventyComputed:
   title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
@@ -14,7 +16,7 @@ eleventyComputed:
 
     <div class="mt-8">
         <div class="a-blog-by-section flex align-center">
-            <img src="/assets/images/giancarlo.jpeg"/>
+            <img src="/assets/images/giancarlo.jpeg" alt="Giancarlo" />
             <span class="text-sm">
                 A blog by <a href="https://giancarlobuomprisco.com">Giancarlo Buomprisco</a>
             </span>
@@ -22,14 +24,15 @@ eleventyComputed:
     </div>
 
     <div class="mt-8">
-        <% list.forEach((post) => { %>
-            <div class="my-4">
+        <% posts.length %>
+        <% posts.forEach((post) => { %>
+            <div class="my-8">
                 <div>
                     <a class="text-2xl hover:underline" href="<%= post.url %>"><%= post.data.title %></a>
                 </div>
 
                 <div class="text-grey-800 text-sm">
-                    <%= post.data.description %>
+                    <%= this.dateFns.format(new Date(post.date), 'LLLL d, yyyy') %>
                 </div>
             </div>
         <% }) %>
@@ -37,10 +40,15 @@ eleventyComputed:
 
     <div class="pt-3">
         <% if (pagination.previous) { %>
-            <a href="<%= pagination.previous.replace(/index.html$/, "") %>">Newer Posts</a>
+            <a class="hover:underline" href="<%= pagination.previous.replace(/index.html$/, "") %>">Newer Posts</a>
         <% } %>
+
+        <% if (pagination.previous && pagination.next) { %>
+          /
+        <% } %>
+
         <% if (pagination.next) { %>
-            <a href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts</a>
+            <a class="hover:underline" href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts</a>
         <% } %>
     </div>
 </div>

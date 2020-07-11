@@ -1,6 +1,8 @@
 ---
 date: 2019-04-29 00:00:00
 title: "Understanding Angular Modules"
+tags:
+    - angular
 ---
 
 Understanding the different types of [Angular modules](https://angular.io/guide/module-types) is a key factor for architecting or refactoring an application.
