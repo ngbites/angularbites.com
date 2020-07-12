@@ -54,7 +54,7 @@
   </head>
 
   <body>
-    <%- content %> <% if (process.env.NODE_ENV === 'production') { %> <%-
+    <%- content %> <% if (project.environment === 'production') { %> <%-
     include('ga.ejs') %> <% } %>
 
     <link
