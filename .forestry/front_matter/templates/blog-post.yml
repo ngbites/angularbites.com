@@ -13,5 +13,8 @@ fields:
   config:
     required: true
     date_format: YYYY-MM-DD
+- name: published
+  type: boolean
+  label: Published
 pages:
 - src/posts/async-rendering-with-a-single-rx-operator.md
