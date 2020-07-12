@@ -18,7 +18,7 @@ Why? Your app will "look" faster. It's not going to be *actually* faster, but yo
 
 ### A single-operator approach
 
-In the past I've sold this in various ways, as I described in [How to Render Large Lists in Angular](https://blog.bitsrc.io/3-ways-to-render-large-lists-in-angular-9f4dcb9b65).
+In the past I've solved this in various ways, as I described in [How to Render Large Lists in Angular](https://blog.bitsrc.io/3-ways-to-render-large-lists-in-angular-9f4dcb9b65).
 
 This time, I thought of a single operator that would scatter items in an array sequentially. We'll call this operator `lazyArray`.
 
