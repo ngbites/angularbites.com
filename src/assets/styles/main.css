@@ -11,3 +11,16 @@ a {
 html .container {
   max-width: 750px;
 }
+
+html a {
+  border-radius: 0.35rem;
+  transition: all 0.25s;
+}
+
+html a:hover {
+  background-color: rgba(255, 235, 59, 0.4);
+}
+
+html hr {
+  @apply my-6;
+}
