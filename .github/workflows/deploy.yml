@@ -11,15 +11,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    steps:
-    - uses: fregante/setup-git-token@v1
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-    
+    steps:    
     - uses: actions/checkout@v2
       name: Checkout
       with:
         persist-credentials: false
+        
+    - uses: fregante/setup-git-token@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: install
       run: npm i
