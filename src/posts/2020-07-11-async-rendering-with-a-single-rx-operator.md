@@ -20,9 +20,9 @@ Why? Your app will "look" faster. It's not going to be *actually* faster, but yo
 
 In the past I've solved this in various ways, as I described in [How to Render Large Lists in Angular](https://blog.bitsrc.io/3-ways-to-render-large-lists-in-angular-9f4dcb9b65).
 
-This time, I thought of a single operator that would scatter items in an array sequentially. We'll call this operator `lazyArray`.
+This time I thought of a single operator that would sequentially scatter the rendering process of a subset of the array.
 
-It supports two arguments:
+We'll call this operator `lazyArray`. It supports two arguments:
 
 - `delayMs` = how long the browser should wait before it renders the next array
 - `concurrency` = how many items to render at once
@@ -110,7 +110,7 @@ scan((acc: T[], steps: T[]) => {
 }, [])
 ```
 
-Finally, we check if the amount of processed items is as long as the initial list. In this way, we can understand if it first emission is complete, and in case we set the flag to `false`:
+Finally, we check if the amount of processed items is as long as the initial list. In this way, we can understand if the first emission is complete, and in case we set the flag to `false`:
 
 ```typescript
 tap((scannedItems: T[]) => {
