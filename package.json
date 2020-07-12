@@ -1,7 +1,7 @@
 {
-  "name": "my-blog",
+  "name": "angularbites.com",
   "version": "1.0.0",
-  "description": "My blog",
+  "description": "Angular Bites",
   "scripts": {
     "build-dev:webpack": "webpack",
     "watch:webpack": "webpack --watch",
