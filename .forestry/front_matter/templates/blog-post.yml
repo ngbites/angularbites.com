@@ -12,3 +12,4 @@ fields:
   label: Date
   config:
     required: true
+    date_format: YYYY-MM-DD
