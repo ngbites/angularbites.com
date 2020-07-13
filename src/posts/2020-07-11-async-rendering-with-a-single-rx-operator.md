@@ -71,6 +71,19 @@ export function lazyArray<T>(
 }
 ```
 
+### Usage
+
+Using it is pretty simple, use it just like any other operator:
+
+```typescript
+@Component({ ... })
+export class MyComponent {
+   items$ = this.service.items$.pipe(
+     lazyArray()
+   );
+}
+```
+
 ### Let's break it down, shall we?
 
 We want to keep track whether it's the first emission, or not. We only want to render lazily the first time:
