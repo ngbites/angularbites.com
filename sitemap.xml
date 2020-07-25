@@ -58,15 +58,19 @@
 </url>
 
 <url>
-<loc>https://angularbites.com/async-rendering-with-a-single-rx-operator/</loc>
-</url>
-
-<url>
 <loc>https://angularbites.com/404.html</loc>
 </url>
 
 <url>
 <loc>https://angularbites.com/</loc>
+</url>
+
+<url>
+<loc>https://angularbites.com/async-rendering-with-a-single-rx-operator/</loc>
+</url>
+
+<url>
+<loc>https://angularbites.com/terser-code-is-not-simpler/</loc>
 </url>
 
 </urlset>
