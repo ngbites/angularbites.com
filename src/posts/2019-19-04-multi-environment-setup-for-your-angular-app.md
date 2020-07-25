@@ -1,6 +1,8 @@
 ---
 date: 2019-04-19
 title: Multi-environment setup for your Angular app
+tags:
+  - angular
 ---
 
 One of the most welcome additions to our tooling as Angular developers is certainly the Angular CLI. The CLI allows us to bootstrap an Angular app and also manage it through all its lifecycle. 

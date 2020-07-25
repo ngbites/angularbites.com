@@ -1,6 +1,9 @@
 ---
 date: 2019-05-02
-title: State Management with NGRX - Introduction
+title: 'State Management with NGRX - Introduction'
+tags:
+  - ngrx
+  - angular
 ---
 
 ## State Management with NGRX — Introduction

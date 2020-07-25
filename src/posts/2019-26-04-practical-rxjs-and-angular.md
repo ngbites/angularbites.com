@@ -1,6 +1,9 @@
 ---
 date: 2019-04-26
 title: 'Practical RxJS and Angular'
+tags:
+  - angular
+  - ngrx
 ---
 
 Working with RxJS **is a little bit like having superpowers**: your powers allow you to do extraordinary things, but they’re easy to misuse, and when that happens - it can be quite dangerous!

@@ -1,6 +1,8 @@
 ---
 date: 2019-04-05
 title: Writing scalable Typescript
+tags:
+  - typescript
 ---
 
 #### Let’s explore in detail how to write clean, safe, enterprise-grade Typescript code

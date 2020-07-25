@@ -1,6 +1,8 @@
 ---
 date: 2019-04-25
 title: Building an enterprise-grade Angular project structure
+tags:
+  - angular
 ---
 
 An important task in setting up a modern front-end project is to define a scalable, long-term and future-proof folders structure, and the naming guidelines for each different programming entity.

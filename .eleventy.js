@@ -5,10 +5,8 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
-
-  eleventyConfig.addPlugin(lazyImagesPlugin, {
-    transformImgPath: (imgPath) => `./src/${imgPath}`,
-  });
+  eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.addLayoutAlias('post', 'layouts/post.ejs');
 
   eleventyConfig.setEjsOptions({
     rmWhitespace: true,

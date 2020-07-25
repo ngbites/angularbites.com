@@ -28,7 +28,7 @@ h1 {
 }
 
 .post li {
-  @apply leading-loose;
+  @apply leading-loose text-xl;
 }
 
 .post .user-image img {
@@ -49,4 +49,12 @@ h1 {
 .post p > code {
   background: #efefef;
   padding: 0.25rem 0.5rem;
+}
+
+.post .tag-item {
+  @apply rounded mr-2 bg-red-500 px-2 py-1 text-white;
+}
+
+.post .tag-item:hover {
+  @apply bg-red-600;
 }

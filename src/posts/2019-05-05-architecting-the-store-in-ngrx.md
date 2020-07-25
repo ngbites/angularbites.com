@@ -1,6 +1,9 @@
 ---
 date: 2019-05-05
 title: Architecting the Store in NGRX
+tags:
+  - ngrx
+  - angular
 ---
 
 This is the second article of a series that aims to explain in detail a step-by-step approach to building an Angular application with NGRX.

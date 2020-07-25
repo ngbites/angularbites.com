@@ -3,18 +3,10 @@ layout: layouts/base.ejs
 ---
 
 <div class="container mx-auto pt-8">
-  <header class="mb-8">
-    <h2 class="text-2xl">
-      <a href="/"><%= site.title %></a>
-    </h2>
+  <%- include /layouts/header.ejs %>
 
-    <h2 class="text-lg mb-8 text-gray-800">
-      <%= site.description %>
-    </h2>
-  </header>
-
-  <article class="post pt-10">
-    <header class="mb-10">
+  <article class="post pt-4">
+    <header class="mb-6">
       <h1 class="text-5xl">
         <%= title %>
       </h1>
@@ -30,14 +22,22 @@ layout: layouts/base.ejs
           </span>
         </a>
       </div>
+
+      <div class="mt-8 mb-8">
+        <% for (const tag of tags) { %>
+          <a href="/tags/<%= tag %>" class="tag-item text-xs">
+            <%= tag %>
+          </a>
+        <% } %>
+      </div>
     </header>
 
-    <section class="pt-3 pb-3">
+    <section class="pb-3">
       <%- content %>
     </section>
 
     <div>
-      Do you want to report something incorrect? Please open a PR on <a href='https://github.com/Gbuomprisco/angularbites.com'>Github</a>
+      Do you want to report something incorrect? Please open an Issue or a PR on <a href='https://github.com/Gbuomprisco/angularbites.com'>Github</a>
     </div>
 
     <footer class="mt-5 pb-5">

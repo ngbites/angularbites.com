@@ -1,6 +1,10 @@
 ---
 date: 2019-08-25
 title: Building Scalable Multi-Platform Projects with Angular and Nx
+tags:
+  - nx
+  - angular
+  - ionic
 ---
 
 This article is a follow-up from my previous thought that I wrote on [building enterprise-scale projects in Angular](https://medium.com/r/?url=https%3A%2F%2Fitnext.io%2Fbuilding-an-enterprise-grade-angular-project-structure-f5be32533ba3%3Fsource%3D---------19------------------).

@@ -1,6 +1,8 @@
 ---
 date: 2019-04-17
 title: Enforce your team coding style with Prettier and TsLint
+tags:
+  - typescript
 ---
 
 A project’s coding style is the first and most noticeable trait that a new senior hire will be looking at while browsing the codebase for the first time. 
@@ -56,8 +58,8 @@ npm install --save-dev prettier tslint-config-prettier
 If you kickstarted your project using your framework’s CLI, then you will likely already have created a _tslint.json_ file in your project. If you don’t, create it and simply add the following content:
 
 ```json
-{  
-  "extends": ["tslint:recommended", "tslint-config-prettier"]  
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"]
 }
 ```
 
@@ -68,9 +70,9 @@ After that — it’s time to setup Prettier. In order to create the configu
 Here is a simple _.prettierrc_ file with options I tend to use:
 
 ```yaml
-tabWidth: 4  
-singleQuote: _true  
-_bracketSpacing: _true  
+tabWidth: 4
+singleQuote: _true
+_bracketSpacing: _true
 _printWidth: 80
 ```
 

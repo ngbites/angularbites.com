@@ -1,6 +1,8 @@
 ---
 date: 2019-04-27
 title: Frameworks don't magically make your code good
+tags:
+  - programming
 ---
 
 Since the beginning of this decade, Front End web frameworks have dramatically changed the way we build applications, with both pros and cons.
@@ -21,7 +23,7 @@ What do I mean by that? To me, Tech elitism is the feeling of an individual to l
 
 ![](https://cdn-images-1.medium.com/max/1600/1*w2kxwb78swTjKy6ffVVxLQ.jpeg)
 
-Type caption for image (optional)  
+Type caption for image (optional)
 
 A _tech elitist_ will:
 

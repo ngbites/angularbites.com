@@ -1,6 +1,9 @@
 ---
 title: Async Rendering with a single Rx Operator
 date: 2020-07-11
+tags:
+  - angular
+  - rxjs
 ---
 
 The concept of async rendering, in the way I mean it, is simple: the process of rendering items on screen is scattered so that the browser won't block until all items have been rendered.

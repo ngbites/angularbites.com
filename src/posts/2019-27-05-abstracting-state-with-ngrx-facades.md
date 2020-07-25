@@ -1,6 +1,9 @@
 ---
 date: 2019-05-27
 title: Abstracting State with NGRX Facades
+tags:
+  - angular
+  - ngrx
 ---
 
 This is the fourth and last article of a series that aims to explain in detail a step-by-step approach to building an Angular application with NGRX.
