@@ -1,16 +1,18 @@
 <header class="flex">
-  <div>
-    <a href="/">
-      <img width="58" height="58" alt="Logo" src="/assets/images/logo.png" />
+  <div class="align-items">
+    <a href="/" class="logo">
+      <img alt="Logo" src="/assets/images/logo.png" />
     </a>
   </div>
 
   <div class="ml-5">
-    <h2 class="text-2xl">
-      <a class="font-bold" href="/"><%= site.title %></a>
-    </h2>
+    <h1 class="text-4xl my-0">
+      <a class="font-bold site-name" href="/">
+        <%= site.title %>
+      </a>
+    </h1>
 
-    <h2 class="text-lg mb-8 text-gray-800">
+    <h2 class="text-lg mb-8 text-gray-800 font-sans">
       <%= site.description %>
     </h2>
   </div>

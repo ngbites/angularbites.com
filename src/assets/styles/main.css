@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.logo img {
+  width: 5rem;
+  height: auto;
+}
+
+.site-name {
+  font-family: 'Architects Daughter', cursive;
+}
+
 html .container {
   max-width: 750px;
 }
@@ -11,7 +22,7 @@ html a {
 }
 
 body {
-  border-top: 5px solid #f56565;
+  border-top: 6px solid #f56565;
 }
 
 html a:hover {

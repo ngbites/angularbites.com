@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 h1 {
-  @apply font-serif text-4xl font-extrabold mb-2;
+  @apply font-sans text-4xl font-semibold mb-2;
 }
 
 .post h2 {
@@ -15,20 +15,20 @@ h1 {
 }
 
 .post p {
-  @apply leading-9 font-serif text-xl mb-6;
+  @apply leading-10 font-serif text-xl mb-5;
 }
 
 .post pre {
-  @apply mb-6;
+  @apply mb-8;
 }
 
 .post ul {
   list-style: circle;
-  @apply pl-10 my-4;
+  @apply pl-10;
 }
 
 .post li {
-  @apply leading-loose text-xl;
+  @apply leading-loose text-xl my-2 font-serif;
 }
 
 .post .user-image img {
