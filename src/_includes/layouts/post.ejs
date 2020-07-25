@@ -25,9 +25,11 @@ layout: layouts/base.ejs
 
       <div class="mt-8 mb-8">
         <% for (const tag of tags) { %>
-          <a href="/tags/<%= tag %>" class="tag-item text-xs">
-            <%= tag %>
-          </a>
+          <% if (tag !== 'posts') { %>
+            <a href="/tags/<%= tag %>" class="tag-item text-xs">
+              <%= tag %>
+            </a>
+          <% } %>
         <% } %>
       </div>
     </header>
@@ -36,12 +38,13 @@ layout: layouts/base.ejs
       <%- content %>
     </section>
 
-    <div>
-      Do you want to report something incorrect? Please open an Issue or a PR on <a href='https://github.com/Gbuomprisco/angularbites.com'>Github</a>
+    <div class="text-sm">
+      Do you want to report something incorrect? Please open an Issue or a PR on
+      <a class="underline" href='https://github.com/Gbuomprisco/angularbites.com'>Github</a>
     </div>
 
-    <footer class="mt-5 pb-5">
-      <a href="/">Back to home</a>
+    <footer class="mt-5 pb-5 mb-10">
+      <a class="underline" href="/">Back to home</a>
     </footer>
   </article>
 </div>

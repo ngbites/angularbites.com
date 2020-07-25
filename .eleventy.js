@@ -19,6 +19,8 @@ module.exports = function (eleventyConfig) {
     files: './_site/assets/styles/main.css',
   });
 
+  // eleventyConfig.addPassthroughCopy('src/assets');
+
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if (outputPath.endsWith('.html')) {
       const minified = htmlmin.minify(content, {

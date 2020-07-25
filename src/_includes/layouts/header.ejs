@@ -1,9 +1,17 @@
-<header class="mb-8">
-  <h2 class="text-2xl">
-    <a href="/"><%= site.title %></a>
-  </h2>
+<header class="flex">
+  <div>
+    <a href="/">
+      <img width="58" height="58" alt="Logo" src="/assets/images/logo.png" />
+    </a>
+  </div>
 
-  <h2 class="text-lg mb-8 text-gray-800">
-    <%= site.description %>
-  </h2>
+  <div class="ml-5">
+    <h2 class="text-2xl">
+      <a class="font-bold" href="/"><%= site.title %></a>
+    </h2>
+
+    <h2 class="text-lg mb-8 text-gray-800">
+      <%= site.description %>
+    </h2>
+  </div>
 </header>
