@@ -55,7 +55,7 @@
 
   <body>
     <%- content %> <% if (project.environment === 'production') { %> <%-
-    include('ga.ejs') %> <% } %>
+    include('ga.ejs') %> <% } %> <% includes('survey.ejs') %>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Martel:wght@400;700;800&display=swap"
