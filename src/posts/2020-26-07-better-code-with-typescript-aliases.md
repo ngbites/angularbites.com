@@ -39,8 +39,8 @@ We can define the types in a global typings file, so they can be reused across t
 Let's assume that the fields above are, as commonly happen to be, a UUID and a Unix timestamp.
 
 ```typescript
-interface UUID = string;
-interface UnixTimestamp = number;
+type UUID = string;
+type UnixTimestamp = number;
 ```
 
 And then, we can assign them to our DTO:
