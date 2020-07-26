@@ -10,7 +10,7 @@ If you've ever worked with Typescript, you surely know what `type aliases` are f
 
 One less-known way they can be leveraged is by simply describing values of primitive types based on their format.
 
-This can accelerate the understanding of a codebase reduce confusion, and deepen the insights gathered from just reading the types of your code.
+This can accelerate the understanding of a codebase, reduce confusion, and deepen the insights gathered from just reading the types of your code.
 
 For example, we have a DTO with two properties. This is how it would normally be written:
 
@@ -23,9 +23,9 @@ class MyDto {
 
 ### Limitations of simple typing
 
-And that's OK, understandable. But not perfect: suppose it's your first day on a new codebase, and you know nothing about it.
+The above is OK, and generally understandable, but can be better. Suppose it's your first day on a new codebase, and you know nothing about it.
 
-You see this DTO, but you're trying to understand what it is and what actual formats it expects from you:
+You see the above DTO, but you're trying to understand what it is and what actual formats it expects from you:
 
 - you don't know what's the format of `ID`
 - you don't know the format of `lastEdited`. Is it a Unix timestamp, or a Julian day? Or the amount of days since Earth was created? Who knows.
