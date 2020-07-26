@@ -19,7 +19,7 @@ h1 {
 }
 
 .post pre {
-  @apply mb-8;
+  margin: 1em 0;
 }
 
 .post ul {
@@ -41,7 +41,7 @@ h1 {
 .post pre:not([class]) {
   background: #efefef;
   padding: 1em;
-  margin: 0.5em 0;
+  margin: 1em 0;
   overflow: auto;
   border-radius: 0.3em;
 }
