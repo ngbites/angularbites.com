@@ -58,3 +58,7 @@ h1 {
 .post .tag-item:hover {
   @apply bg-red-600;
 }
+
+article section a {
+  @apply underline;
+}
