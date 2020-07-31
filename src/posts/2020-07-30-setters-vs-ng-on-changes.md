@@ -18,7 +18,7 @@ As usual, the answer depends on the scenario.
 
 ## Style
 
-In terms of style, using a setter is hands-down my favorite approach.
+Style is very much a subjective factor, but using a setter is hands-down my favorite approach. Let's take a look at a common scenario:
 
 ```typescript
 class MyComponent {
@@ -31,9 +31,11 @@ class MyComponent {
 }
 ```
 
-It's succinct, type-safe, and encourages the usage of Observables. Not much to dislike, so far.
+It's succinct, type-safe, and encourages the usage of Observables. Not much to dislike, imho.
 
-But can you **not** add a getter? Yes. It turns out, Angular does not check the previous value by invoking the getter on the property, but stores its value in its component's logical view.
+But can you **not** add a getter?
+
+Yes. It turns out, Angular does not check the previous value by invoking the getter on the property, but stores its value in its component's logical view.
 
 If you're interested in reading the source code where this happens, [check this out](https://github.com/angular/angular/blob/d1ea1f4c7f3358b730b0d94e65b00bc28cae279c/packages/core/src/render3/bindings.ts#L50).
 
@@ -50,21 +52,21 @@ class MyComponent implements OnChanges {
 }
 ```
 
-The `ngOnChanges` lifecycle hook, on the contrary, it's not as nice, and most importantly, is weakly typed.
+The `ngOnChanges` lifecycle hook, on the contrary, it's not as nice (in my opinion) - and most importantly, is weakly typed.
 
-Also worth to mention that it's less code, which is good.
+Also - it's worth to mention that using setters usually takes less code, which is always a good thing.
 
 ## Performance
 
-Does performance change much? At first, we all thought that `ngOnChanges` would be more efficient as being part of Angular's lifecycle hooks, and therefore being aware of when a property changed.
+Does performance change much? At first, we thought that `ngOnChanges` would be more efficient as being part of Angular's lifecycle hooks, and therefore being aware of when a property changed.
 
 It turns out, though, that Angular **does only change a property when the binding is a new instance**. Of course, we're taking into account the change detection being `OnPush`.
 
-Performance-wise, according to my tests, there isn't a better way.
+Performance-wise, according to my tests, there isn't a better way, and shouldn't be a factor when deciding which way to go with.
 
 ## Dealing with multiple Inputs
 
-The situation shifts when having to take into account changes on multiple inputs, which is not that uncommon.
+The situation changes when taking into account changes on multiple inputs:
 
 ```typescript
 class MyComponent implements OnChanges {
@@ -80,10 +82,10 @@ class MyComponent implements OnChanges {
 }
 ```
 
-In this case, it's fairly straightforward and simpler to simply receive all the inputs at once.
+In this case, it's fairly straightforward and simpler to receive all the inputs at once.
 
 But because this situation is pretty uncommon, and sometimes a sign of a _code-smell_, you'll find yourselves wanting to use the setter the majority of the time.
 
-At the end of the day, this decision is up to you and your team's preferences. But well, now you know my opinion on the subject :)
+At the end of the day, remember that this decision is always up to you and your team's preferences.
 
 _Thank you for reading, I hope you enjoyed this article. If you did, consider follow me on [Twitter](https://twitter.com/gc_psk) or sign up to the Newsletter using the form below!_
