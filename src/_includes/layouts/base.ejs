@@ -35,7 +35,7 @@
 
     <meta property="og:locale" content="<%= site.locale %>" />
     <meta property="og:site_name" content="<%= site.site_name %>" />
-    <% if (locals.tags == "posts") { %>
+    <% if (locals.tags.includes("posts")) { %>
     <meta property="og:type" content="article" />
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:creator" content="@gc_psk" />
