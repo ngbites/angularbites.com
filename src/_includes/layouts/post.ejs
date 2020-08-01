@@ -6,31 +6,38 @@ layout: layouts/base.ejs
   <%- include /layouts/header.ejs %>
 
   <article class="post pt-4">
+    <% if (typeof featuredImage !== 'undefined') { %>
+      <div class="mb-5">
+        <img src="<%- featuredImage %>" />
+      </div>
+    <% } %>
+
     <header class="mb-6">
       <h1 class="text-5xl">
         <%= title %>
       </h1>
 
-      <div class="user-image mb-2 flex items-center">
-        <a target="_blank" href="https://twitter.com/@gc_psk" class="flex items-center">
-          <img src="/assets/images/giancarlo.jpeg" />
-          <span class="ml-2 text-gray-600 text-sm">@gc_psk</span>
-        </a>
+      <div class="flex items-center">
+        <div class="user-image flex items-center">
+          <a target="_blank" href="https://twitter.com/@gc_psk" class="flex items-center">
+            <img src="/assets/images/giancarlo.jpeg" />
+            <span class="ml-2 text-gray-600 text-sm">@gc_psk</span>
+          </a>
 
           <span class="text-gray-600 text-400 ml-1">
             /  <%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %>
           </span>
-        </a>
-      </div>
+        </div>
 
-      <div class="mt-8 mb-8">
-        <% for (const tag of tags) { %>
-          <% if (tag !== 'posts') { %>
-            <a href="/tags/<%= tag %>" class="tag-item text-xs">
-              <%= tag %>
-            </a>
+        <div class="ml-5">
+          <% for (const tag of tags) { %>
+            <% if (tag !== 'posts') { %>
+              <a href="/tags/<%= tag %>" class="tag-item text-xs">
+                <%= tag %>
+              </a>
+            <% } %>
           <% } %>
-        <% } %>
+        </div>
       </div>
     </header>
 

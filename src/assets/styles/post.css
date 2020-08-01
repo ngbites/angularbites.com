@@ -3,32 +3,34 @@
 @tailwind utilities;
 
 h1 {
-  @apply font-sans text-4xl font-semibold mb-2;
+  @apply font-sans text-3xl mb-2;
 }
 
 .post h2 {
-  @apply font-bold text-3xl mt-8 pb-3;
+  @apply font-semibold text-2xl mt-8 pb-3;
 }
 
 .post h3 {
-  @apply font-bold text-2xl mt-8 pb-2 font-sans;
+  @apply font-semibold text-xl mt-8 pb-2 font-sans;
 }
 
 .post p {
-  @apply leading-10 font-serif text-xl mb-5;
+  @apply leading-8 font-serif text-lg mb-5;
+  color: #323232;
 }
 
 .post pre {
-  margin: 1em 0;
+  margin: 2rem 0;
 }
 
 .post ul {
   list-style: circle;
-  @apply pl-10;
+  @apply pl-10 pb-3 mb-3;
 }
 
 .post li {
-  @apply leading-loose text-xl my-2 font-serif;
+  @apply leading-8 text-lg my-2 font-serif;
+  color: #323232;
 }
 
 .post .user-image img {
@@ -40,13 +42,14 @@ h1 {
 
 .post pre:not([class]) {
   background: #efefef;
-  padding: 1em;
-  margin: 1em 0;
+  padding: 1rem;
+  margin: 2rem 0;
   overflow: auto;
   border-radius: 0.3em;
 }
 
-.post p > code {
+.post p > code,
+.post li > code {
   background: #efefef;
   padding: 0.25rem 0.5rem;
 }
