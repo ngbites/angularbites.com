@@ -28,6 +28,11 @@
       property="og:description"
       content="<%= (!!locals.description) ? description : site.description %>"
     />
+
+    <% if (typeof locals.featuredImage !== 'undefined') { %>
+      <meta name="twitter:image" property="og:image" content="<%- site.url %><%- locals.featuredImage %>"/>
+    <% } %>
+
     <meta property="og:locale" content="<%= site.locale %>" />
     <meta property="og:site_name" content="<%= site.site_name %>" />
     <% if (locals.tags == "posts") { %>
@@ -36,6 +41,7 @@
       property="article:published_time"
       content="<%= date.toISOString() %>"
     />
+
     <script type="application/ld+json">
       {
         "description": "<%= (!!locals.description) ? description : site.description %>",

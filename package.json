@@ -10,6 +10,7 @@
     "build:webpack": "NODE_ENV=production webpack --mode production",
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
     "build": "run-s clean build:*",
+    "build:dev": "NODE_ENV=development webpack --mode development",
     "serve:local": "serve _site",
     "serve": "run-s build serve:local",
     "clean": "rimraf _site",

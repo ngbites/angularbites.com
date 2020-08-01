@@ -1,6 +1,7 @@
 ---
 title: Using the Intersection Observer API with Angular
 date: 2020-08-01
+featuredImage: /assets/images/posts/intersection-observer.png
 tags:
   - angular
   - performance
