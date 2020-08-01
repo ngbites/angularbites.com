@@ -3,20 +3,28 @@
 @tailwind utilities;
 
 h1 {
-  @apply font-sans text-3xl mb-2;
+  @apply font-sans mb-2;
+
+  font-size: 5rem;
+  font-weight: bold;
+  width: 1050px;
+  position: relative;
+  left: -150px;
+  text-align: center;
 }
 
 .post h2 {
-  @apply font-semibold text-2xl mt-8 pb-3;
+  @apply font-semibold text-3xl mt-8 pb-3;
 }
 
 .post h3 {
-  @apply font-semibold text-xl mt-8 pb-2 font-sans;
+  @apply font-semibold text-2xl mt-8 pb-2 font-sans;
 }
 
 .post p {
-  @apply leading-8 font-serif text-lg mb-5;
-  color: #323232;
+  @apply leading-8 text-lg mb-5 font-serif;
+
+  color: var(--color);
 }
 
 .post pre {
@@ -30,7 +38,8 @@ h1 {
 
 .post li {
   @apply leading-8 text-lg my-2 font-serif;
-  color: #323232;
+
+  color: var(--color);
 }
 
 .post .user-image img {
@@ -52,6 +61,7 @@ h1 {
 .post li > code {
   background: #efefef;
   padding: 0.25rem 0.5rem;
+  border-radius: 4px;
 }
 
 .post .tag-item {

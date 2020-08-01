@@ -4,6 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
+:root {
+  --background: #fff;
+  --color: #323232;
+  --width: 750px;
+  --brand-color: #f56565;
+}
+
 .logo img {
   width: 5rem;
   height: auto;
@@ -13,8 +20,13 @@
   font-family: 'Architects Daughter', cursive;
 }
 
+.site-name img {
+  width: 5rem;
+  margin-right: 1rem;
+}
+
 html .container {
-  max-width: 750px;
+  max-width: var(--width);
 }
 
 html a {
@@ -22,11 +34,13 @@ html a {
 }
 
 body {
-  border-top: 6px solid #f56565;
+  border-top: 6px solid var(--brand-color);
+  background: var(--background);
+  color: var(--color);
 }
 
 html a:hover {
-  color: #f56565;
+  color: var(--brand-color);
 }
 
 html hr {

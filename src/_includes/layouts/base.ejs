@@ -37,6 +37,10 @@
     <meta property="og:site_name" content="<%= site.site_name %>" />
     <% if (locals.tags == "posts") { %>
     <meta property="og:type" content="article" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:creator" content="@gc_psk" />
+    <meta property="og:url" content="<%= site.url %><%= page.url %>" />
+
     <meta
       property="article:published_time"
       content="<%= date.toISOString() %>"

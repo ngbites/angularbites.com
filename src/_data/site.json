@@ -1,7 +1,7 @@
 {
   "site_name": "Angular Bites",
   "title": "Angular Bites",
-  "description": "Bite-sized resources for Angular and its ecosystem",
+  "description": "Articles and training for Angular, Stencil, Firebase, Typescript, Nx",
   "url": "https://angularbites.com",
   "locale": "en",
   "author": "Giancarlo Buomprisco"

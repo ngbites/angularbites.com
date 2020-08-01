@@ -6,14 +6,8 @@ layout: layouts/base.ejs
   <%- include /layouts/header.ejs %>
 
   <article class="post pt-4">
-    <% if (typeof featuredImage !== 'undefined') { %>
-      <div class="mb-5">
-        <img src="<%- featuredImage %>" />
-      </div>
-    <% } %>
-
     <header class="mb-6">
-      <h1 class="text-5xl">
+      <h1>
         <%= title %>
       </h1>
 
