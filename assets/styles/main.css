@@ -17923,6 +17923,13 @@ html hr {
   margin-bottom: 1.5rem;
 }
 
+.posts-list .post-featured-image {
+  width: 200px;
+  max-width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
@@ -104990,12 +104997,20 @@ video {
 h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, sans-serif;
   margin-bottom: 0.5rem;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   width: 1050px;
   position: relative;
   left: -150px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    width: 100%;
+    left: auto;
+  }
 }
 
 .post h2 {
