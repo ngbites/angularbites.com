@@ -1,6 +1,7 @@
 ---
 title: Async Rendering with a single Rx Operator
 date: 2020-07-11
+featuredImage: /assets/images/posts/async-rendering.png
 tags:
   - angular
   - rxjs

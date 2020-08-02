@@ -1,6 +1,7 @@
 ---
 date: 2019-04-15
 title: OnPush change detection for faster Angular apps
+featuredImage: https://miro.medium.com/fit/c/960/288/1*VKY-Ldkt-iHobItql7G_5w.png
 tags:
   - angular
   - performance

@@ -1,6 +1,7 @@
 ---
 date: 2019-08-25
 title: Building Scalable Multi-Platform Projects with Angular and Nx
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/0*erZf_hQ4V3MLHSyf'
 tags:
   - nx
   - angular

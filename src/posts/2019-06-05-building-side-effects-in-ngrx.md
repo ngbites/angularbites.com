@@ -1,6 +1,7 @@
 ---
 date: 2019-06-05
 title: Building Side Effects in NGRXs
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*R3-0VFvXB2rq-rAtWyNwxA.gif'
 tags:
   - ngrx
 ---

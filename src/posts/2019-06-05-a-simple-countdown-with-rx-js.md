@@ -1,6 +1,7 @@
 ---
 date: 2019-06-05
 title: A simple Countdown with RxJS
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*UqfNSA5wgWcEXphLsBXuUg.gif'
 tags:
   - rxjs
 ---

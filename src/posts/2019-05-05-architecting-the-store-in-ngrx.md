@@ -1,6 +1,7 @@
 ---
 date: 2019-05-05
 title: Architecting the Store in NGRX
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*CYmnppaZkh7OcF1IRH15jQ.png'
 tags:
   - ngrx
   - angular

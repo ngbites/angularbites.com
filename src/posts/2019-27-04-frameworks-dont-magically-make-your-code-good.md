@@ -1,6 +1,7 @@
 ---
 date: 2019-04-27
 title: Frameworks don't magically make your code good
+featuredImage: https://miro.medium.com/max/1400/1*jBgcK5sLhAdi6x85PKl02w.jpeg
 tags:
   - programming
 ---

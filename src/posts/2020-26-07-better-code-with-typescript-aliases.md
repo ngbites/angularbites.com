@@ -1,6 +1,7 @@
 ---
 title: Better code with Typescript aliases
 date: 2020-07-26
+featuredImage: /assets/images/posts/typescript-aliases.png
 tags:
   - typescript
   - programming

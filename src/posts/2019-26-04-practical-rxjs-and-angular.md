@@ -1,6 +1,7 @@
 ---
 date: 2019-04-26
 title: 'Practical RxJS and Angular'
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*QOncAKIrICia9bNZPCh10A.gif'
 tags:
   - angular
   - ngrx

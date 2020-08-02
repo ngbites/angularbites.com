@@ -1,6 +1,7 @@
 ---
 title: 'Setters vs ngOnChanges: which one is better?'
 date: 2020-07-30
+featuredImage: /assets/images/posts/setters-vs-on-changes.png
 tags:
   - angular
 ---

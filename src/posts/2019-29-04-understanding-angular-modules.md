@@ -1,6 +1,7 @@
 ---
 date: 2019-04-29 00:00:00
 title: "Understanding Angular Modules"
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*gpPfP-mWGZ7Ad6KRDAeKGw.jpeg'
 tags:
     - angular
 ---

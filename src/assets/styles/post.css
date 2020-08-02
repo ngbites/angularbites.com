@@ -5,12 +5,20 @@
 h1 {
   @apply font-sans mb-2;
 
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   width: 1050px;
   position: relative;
   left: -150px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    width: 100%;
+    left: auto;
+  }
 }
 
 .post h2 {

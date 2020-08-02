@@ -1,6 +1,7 @@
 ---
 date: 2019-04-05
 title: Writing scalable Typescript
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*xxzCZ_x7oeKlq_NRTw6GeA.jpeg'
 tags:
   - typescript
 ---

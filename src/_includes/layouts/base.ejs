@@ -29,16 +29,19 @@
       content="<%= (!!locals.description) ? description : site.description %>"
     />
 
+    <meta property="og:locale" content="<%= site.locale %>" />
+    <meta property="og:site_name" content="<%= site.site_name %>" />
+    <% if ((locals.tags || []).includes("posts")) { %>
+    <meta property="og:type" content="article" />
+
     <% if (typeof locals.featuredImage !== 'undefined') { %>
       <meta name="twitter:image" property="og:image" content="<%- site.url %><%- locals.featuredImage %>"/>
     <% } %>
 
-    <meta property="og:locale" content="<%= site.locale %>" />
-    <meta property="og:site_name" content="<%= site.site_name %>" />
-    <% if (locals.tags.includes("posts")) { %>
-    <meta property="og:type" content="article" />
-    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="<%= title %>" />
+    <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:creator" content="@gc_psk" />
+    <meta property="twitter:description" content="<%= (!!locals.description) ? description : site.description %>"/>
     <meta property="og:url" content="<%= site.url %><%= page.url %>" />
 
     <meta

@@ -46,3 +46,9 @@ html a:hover {
 html hr {
   @apply my-6;
 }
+
+.posts-list .post-featured-image {
+  width: 200px;
+  max-width: 200px;
+  object-fit: cover;
+}

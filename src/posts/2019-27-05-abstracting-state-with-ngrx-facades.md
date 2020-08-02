@@ -1,6 +1,7 @@
 ---
 date: 2019-05-27
 title: Abstracting State with NGRX Facades
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*TggmpinSAPh1ndMBoTj0bw.png'
 tags:
   - angular
   - ngrx
