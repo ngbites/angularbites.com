@@ -2,6 +2,7 @@
 title: Better code with Typescript aliases
 date: 2020-07-26
 featuredImage: /assets/images/posts/typescript-aliases.png
+description: This article explains how to leverage Typescript aliases to help us increase the readability and understanding of the code
 tags:
   - typescript
   - programming

@@ -2,6 +2,7 @@
 title: Using the Intersection Observer API with Angular
 date: 2020-08-01
 featuredImage: /assets/images/posts/intersection-observer.png
+description: This article shows how to build a directive with Angular that uses the Intersection Observer API to check when an element becomes visible on the page
 tags:
   - angular
   - performance

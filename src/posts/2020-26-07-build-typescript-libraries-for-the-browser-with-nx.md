@@ -2,6 +2,7 @@
 title: Build Typescript libraries for the browser with Nx
 date: 2020-07-25
 featuredImage: /assets/images/posts/typescript-libraries-with-nx.png
+description: This article shows how to setup your Webpack configuration to build Typescript libraries with Nx
 tags:
   - typescript
   - nx

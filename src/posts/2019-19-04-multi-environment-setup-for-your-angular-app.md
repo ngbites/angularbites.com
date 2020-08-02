@@ -2,6 +2,7 @@
 date: 2019-04-19
 title: Multi-environment setup for your Angular app
 featuredImage: https://miro.medium.com/fit/c/1400/420/1*Uf_LkjpQHAd4qDpAnqpwpQ.png
+description: Setting up multiple environment setups with the Angular CLI
 tags:
   - angular
 ---

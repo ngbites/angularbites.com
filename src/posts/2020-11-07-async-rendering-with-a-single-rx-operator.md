@@ -2,6 +2,7 @@
 title: Async Rendering with a single Rx Operator
 date: 2020-07-11
 featuredImage: /assets/images/posts/async-rendering.png
+description: Increase your app rendering performance with this simple Rx operator
 tags:
   - angular
   - rxjs

@@ -30,6 +30,10 @@ h1 {
   @apply font-semibold text-2xl mt-8 pb-2 font-sans;
 }
 
+.post h4 {
+  @apply font-semibold text-xl mt-8 pb-2 font-sans;
+}
+
 .post p {
   @apply leading-8 text-lg mb-5 font-serif;
 

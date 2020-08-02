@@ -2,6 +2,7 @@
 date: 2019-06-05
 title: A simple Countdown with RxJS
 featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*UqfNSA5wgWcEXphLsBXuUg.gif'
+description: In this tutorial, we’re going to build a very simple timer application with only a few lines of code using RxJS
 tags:
   - rxjs
 ---

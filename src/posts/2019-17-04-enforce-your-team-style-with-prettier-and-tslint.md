@@ -2,6 +2,7 @@
 date: 2019-04-17
 title: Enforce your team coding style with Prettier and TsLint
 featuredImage: https://miro.medium.com/max/1400/1*DisWkrhZ8V6Hhi522eOu0g.gif
+description: Using TsLint to enforce your team coding style
 tags:
   - typescript
 ---

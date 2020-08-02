@@ -2,9 +2,10 @@
 date: 2019-04-26
 title: 'Practical RxJS and Angular'
 featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*QOncAKIrICia9bNZPCh10A.gif'
+description: Practical scenarios with Angular and RxJS, going through useful patterns you may use and what to look out for
 tags:
   - angular
-  - ngrx
+  - rxjs
 ---
 
 Working with RxJS **is a little bit like having superpowers**: your powers allow you to do extraordinary things, but they’re easy to misuse, and when that happens - it can be quite dangerous!

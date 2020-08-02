@@ -2,6 +2,7 @@
 date: 2019-05-02
 title: 'State Management with NGRX - Introduction'
 featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*dlu3ZwrnKXqG1vMbsiemxQ.png'
+description: An Introduction to the NGRX platform — Concepts, Best Practices, and Tips
 tags:
   - ngrx
   - angular

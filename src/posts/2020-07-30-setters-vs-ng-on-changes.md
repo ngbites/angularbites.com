@@ -2,6 +2,7 @@
 title: 'Setters vs ngOnChanges: which one is better?'
 date: 2020-07-30
 featuredImage: /assets/images/posts/setters-vs-on-changes.png
+description: Listening to Input changes can be done in different ways. But which one should you use?
 tags:
   - angular
 ---
