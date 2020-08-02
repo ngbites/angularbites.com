@@ -104997,8 +104997,8 @@ video {
 h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, sans-serif;
   margin-bottom: 0.5rem;
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 5rem;
+  font-weight: 700;
   width: 1050px;
   position: relative;
   left: -150px;
@@ -105007,7 +105007,8 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+    text-align: left;
+    font-size: 2.25rem;
     width: 100%;
     left: auto;
   }
