@@ -105029,6 +105029,14 @@ h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, sans-serif;
 }
 
+.post h4 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, sans-serif;
+}
+
 .post p {
   line-height: 2rem;
   font-size: 1.125rem;
