@@ -58,11 +58,23 @@
 </url>
 
 <url>
+<loc>https://angularbites.com/404.html</loc>
+</url>
+
+<url>
+<loc>https://angularbites.com/</loc>
+</url>
+
+<url>
 <loc>https://angularbites.com/async-rendering-with-a-single-rx-operator/</loc>
 </url>
 
 <url>
 <loc>https://angularbites.com/build-typescript-libraries-for-the-browser-with-nx/</loc>
+</url>
+
+<url>
+<loc>https://angularbites.com/tags/posts/</loc>
 </url>
 
 <url>
@@ -75,18 +87,6 @@
 
 <url>
 <loc>https://angularbites.com/intersection-observer-with-angular/</loc>
-</url>
-
-<url>
-<loc>https://angularbites.com/404.html</loc>
-</url>
-
-<url>
-<loc>https://angularbites.com/</loc>
-</url>
-
-<url>
-<loc>https://angularbites.com/tags/posts/</loc>
 </url>
 
 </urlset>
