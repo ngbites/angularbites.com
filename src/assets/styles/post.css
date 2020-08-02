@@ -5,8 +5,8 @@
 h1 {
   @apply font-sans mb-2;
 
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 5rem;
+  font-weight: 700;
   width: 1050px;
   position: relative;
   left: -150px;
@@ -15,7 +15,8 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+    text-align: left;
+    font-size: 2.25rem;
     width: 100%;
     left: auto;
   }

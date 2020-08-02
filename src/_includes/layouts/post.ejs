@@ -6,18 +6,12 @@ layout: layouts/base.ejs
   <%- include /layouts/header.ejs %>
 
   <article class="post pt-4">
-    <header class="mb-6">
+    <header class="mb-8">
       <h1>
         <%= title %>
       </h1>
 
-      <% if (typeof featuredImage !== 'undefined') { %>
-        <div class="mb-5 mt-5 hidden md:block">
-          <img src="<%- featuredImage %>" />
-        </div>
-      <% } %>
-
-      <div class="block items-center md:flex">
+      <div class="block items-center md:flex justify-center">
         <div class="user-image flex items-center">
           <a target="_blank" href="https://twitter.com/@gc_psk" class="flex items-center">
             <img src="/assets/images/giancarlo.jpeg" />
@@ -39,6 +33,12 @@ layout: layouts/base.ejs
           <% } %>
         </div>
       </div>
+
+      <% if (typeof featuredImage !== 'undefined') { %>
+        <div class="featured-image mb-8 mt-8 hidden md:block">
+          <img src="<%- featuredImage %>" />
+        </div>
+      <% } %>
     </header>
 
     <section class="pb-3">
