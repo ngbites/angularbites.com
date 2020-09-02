@@ -35,13 +35,20 @@
     <meta property="og:type" content="article" />
 
     <% if (typeof locals.featuredImage !== 'undefined') { %>
-      <meta name="twitter:image" property="og:image" content="<%- site.url %><%- locals.featuredImage %>"/>
+    <meta
+      name="twitter:image"
+      property="og:image"
+      content="<%- site.url %><%- locals.featuredImage %>"
+    />
     <% } %>
 
     <meta property="twitter:title" content="<%= title %>" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:creator" content="@gc_psk" />
-    <meta property="twitter:description" content="<%= (!!locals.description) ? description : site.description %>"/>
+    <meta
+      property="twitter:description"
+      content="<%= (!!locals.description) ? description : site.description %>"
+    />
     <meta property="og:url" content="<%= site.url %><%= page.url %>" />
 
     <meta
@@ -82,8 +89,8 @@
     <!-- GA -->
     <%- include('ga.ejs') %>
 
-    <!-- SURVEY -->
-    <%- include('survey.ejs') %> <% } %>
+    <!-- POPUP -->
+    <%- include('popup.ejs') %> <% } %>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Martel:wght@400;700;800&display=swap"
