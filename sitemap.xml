@@ -82,7 +82,15 @@
 </url>
 
 <url>
+<loc>https://angularbites.com/free-angular-code-review/</loc>
+</url>
+
+<url>
 <loc>https://angularbites.com/404.html</loc>
+</url>
+
+<url>
+<loc>https://angularbites.com/contacts.html</loc>
 </url>
 
 <url>
@@ -91,6 +99,10 @@
 
 <url>
 <loc>https://angularbites.com/tags/posts/</loc>
+</url>
+
+<url>
+<loc>https://angularbites.com/how-to-organize-nx-modules-with-angular/</loc>
 </url>
 
 </urlset>
