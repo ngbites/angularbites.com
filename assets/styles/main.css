@@ -17882,7 +17882,7 @@ video {
 :root {
   --background: #fff;
   --color: #323232;
-  --width: 750px;
+  --width: 1050px;
   --brand-color: #f56565;
 }
 
@@ -17924,10 +17924,24 @@ html hr {
 }
 
 .posts-list .post-featured-image {
-  width: 200px;
-  max-width: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.posts-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.posts-list > a {
+  padding: 1.2rem;
+  transition: box-shadow 0.25s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+
+.posts-list > a:hover {
+  box-shadow: 0 0 48px 1px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 640px) {
@@ -104994,7 +105008,12 @@ video {
   transition-delay: 1000ms;
 }
 
-h1 {
+.post {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.post h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, sans-serif;
   margin-bottom: 0.5rem;
   font-size: 5rem;
@@ -105006,7 +105025,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  h1 {
+  .post h1 {
     text-align: left;
     font-size: 2.25rem;
     width: 100%;
