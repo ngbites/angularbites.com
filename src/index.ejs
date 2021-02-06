@@ -15,30 +15,28 @@ eleventyComputed:
     <%- include /layouts/header.ejs %>
 
     <div class="mt-8 posts-list">
-        <% posts.length %>
         <% posts.forEach((post) => { %>
-            <div class="my-10">
-                <div class="flex">
-                    <div class="hidden md:block">
-                        <img
-                            class="post-featured-image"
-                            src="<%= post.data.featuredImage %>"
-                        />
-                    </div>
+            <a class="my-5 md:w-1/3 sm:w-1/2 w-full" href="<%= post.url %>">
+                <span>
+                    <img
+                        lazy
+                        class="post-featured-image"
+                        src="<%= post.data.featuredImage %>"
+                    />
+                </span>
 
-                    <div class="ml-10">
-                        <div>
-                            <a class="text-3xl" href="<%= post.url %>">
-                                <%= post.data.title %>
-                            </a>
-                        </div>
+                <span class="mt-2">
+                    <span class="block">
+                        <span class="text-2xl">
+                            <%= post.data.title %>
+                        </span>
+                    </span>
 
-                        <div class="text-grey-800 text-sm font-serif">
-                            <%= this.dateFns.format(new Date(post.date), 'LLLL d, yyyy') %>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <span class="text-grey-800 text-sm font-serif">
+                        <%= this.dateFns.format(new Date(post.date), 'LLLL d, yyyy') %>
+                    </span>
+                </span>
+            </a>
         <% }) %>
     </div>
 

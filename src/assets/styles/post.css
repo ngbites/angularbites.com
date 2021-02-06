@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
+.post {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.post h1 {
   @apply font-sans mb-2;
 
   font-size: 5rem;
@@ -14,7 +19,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  h1 {
+  .post h1 {
     text-align: left;
     font-size: 2.25rem;
     width: 100%;

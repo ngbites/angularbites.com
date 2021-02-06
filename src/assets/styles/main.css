@@ -7,7 +7,7 @@
 :root {
   --background: #fff;
   --color: #323232;
-  --width: 750px;
+  --width: 1050px;
   --brand-color: #f56565;
 }
 
@@ -48,7 +48,21 @@ html hr {
 }
 
 .posts-list .post-featured-image {
-  width: 200px;
-  max-width: 200px;
   object-fit: cover;
+}
+
+.posts-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.posts-list > a {
+  padding: 1.2rem;
+  transition: box-shadow 0.25s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+
+.posts-list > a:hover {
+  box-shadow: 0 0 48px 1px rgba(0, 0, 0, 0.1);
 }
