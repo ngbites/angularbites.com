@@ -105017,7 +105017,7 @@ video {
   margin: 0 auto;
 }
 
-.post h1 {
+.post .post-title {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, sans-serif;
   margin-bottom: 0.5rem;
   font-size: 5rem;
@@ -105029,7 +105029,7 @@ video {
 }
 
 @media (max-width: 768px) {
-  .post h1 {
+  .post .post-title {
     text-align: left;
     font-size: 2.25rem;
     width: 100%;
