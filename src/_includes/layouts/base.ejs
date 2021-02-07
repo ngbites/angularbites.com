@@ -81,16 +81,19 @@
     </script>
 
     <% } %> <%- include('webpack.ejs') %>
+
+    <% if (project.environment === 'production') { %>
+      <!-- GA -->
+      <%- include('ga.ejs') %>
+    <% } %>
   </head>
 
   <body>
     <!-- CONTENT -->
-    <%- content %> <% if (project.environment === 'production') { %>
-    <!-- GA -->
-    <%- include('ga.ejs') %>
+    <%- content %>
 
     <!-- POPUP -->
-    <%- include('convertkit-popup.ejs') %> <% } %>
+    <%- include('convertkit-popup.ejs') %>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Martel:wght@400;700;800&display=swap"
