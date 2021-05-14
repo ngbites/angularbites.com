@@ -17886,17 +17886,8 @@ video {
   --brand-color: #f56565;
 }
 
-.logo img {
-  width: 5rem;
-  height: auto;
-}
-
-.site-name {
-  font-family: 'Architects Daughter', cursive;
-}
-
 .site-name img {
-  width: 5rem;
+  width: 3rem;
   margin-right: 1rem;
 }
 
@@ -17912,6 +17903,8 @@ body {
   border-top: 6px solid var(--brand-color);
   background: var(--background);
   color: var(--color);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 html a:hover {
@@ -17942,10 +17935,6 @@ html hr {
 
 .posts-list > a:hover {
   box-shadow: 0 0 48px 1px rgba(0, 0, 0, 0.1);
-}
-
-.main-navigation > a:hover {
-  box-shadow: 0px 4px 0 0px var(--brand-color);
 }
 
 @media (min-width: 640px) {
@@ -105013,18 +105002,18 @@ video {
 }
 
 .post {
-  max-width: 750px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
 .post .post-title {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, sans-serif;
   margin-bottom: 0.5rem;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   width: 1050px;
   position: relative;
-  left: -150px;
+  left: -250px;
   text-align: center;
 }
 
@@ -105040,14 +105029,14 @@ video {
 .post h2 {
   font-weight: 600;
   font-size: 1.875rem;
+  padding-bottom: 1.25rem;
   margin-top: 2rem;
-  padding-bottom: 0.75rem;
 }
 
 .post h3 {
   font-weight: 600;
   font-size: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   padding-bottom: 0.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, sans-serif;
 }
@@ -105055,7 +105044,7 @@ video {
 .post h4 {
   font-weight: 600;
   font-size: 1.25rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-bottom: 0.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, sans-serif;
 }
@@ -105063,7 +105052,7 @@ video {
 .post p {
   line-height: 2rem;
   font-size: 1.125rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
   font-family: Martel, serif;
   color: var(--color);
 }
@@ -105086,6 +105075,10 @@ video {
   margin-bottom: 0.5rem;
   font-family: Martel, serif;
   color: var(--color);
+}
+
+.post li > p {
+  margin-bottom: 0.5rem;
 }
 
 .post .user-image img {
