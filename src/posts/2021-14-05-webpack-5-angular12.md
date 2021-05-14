@@ -15,6 +15,14 @@ That means, faster and smaller builds. Who doesn't like that?
 
 I took the time to benchmark 2 apps I work on, one small and another medium-sized: read on to see the results.
 
+**Notice:**: The results can differ wildly given your setup and applications, so please don't take this benchmarks too seriously.
+
+Actually, I'd love to know what your results will end up being!
+
+### Setup
+
+The tests have been done on a Macbook Pro 2018 i7 2.2Ghz 32Gb RAM - using Node v16.
+
 ## Webpack 5 vs Webpack 4: Small Application benchmark
 
 ### Development Build Time
@@ -130,5 +138,7 @@ Webpack 5,1.970
 - Webpack 5: 1.970Mb
 
 ***
+
+If you want, do shoot me an email and let me know what your results will look like!
 
 _If you enjoyed this article, follow me on [Twitter](https://twitter.com/gc_psk)_
