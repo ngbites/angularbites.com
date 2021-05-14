@@ -7,9 +7,9 @@ tags:
 - angular
 ---
 
-Angular 12 has just been released! Yay!
+**Angular 12** has just been released! Yay!
 
-This is a particularly long-awaited release due to the CLI using Webpack 5 by default, which comes with improved performance and tree-shaking.
+This is a particularly long-awaited release due to the CLI using Webpack 5 by default, which comes with improved performance and tree-shaking - or at least that's the promise.
 
 That means, faster and smaller builds. Who doesn't like that?
 
@@ -22,6 +22,9 @@ Actually, I'd love to know what your results will end up being!
 ### Setup
 
 The tests have been done on a Macbook Pro 2018 i7 2.2Ghz 32Gb RAM - using Node v16.
+
+- The Webpack 4 builds are built using Angular 11.2.12.
+- The Webpack 5 builds are built using Angular 12.0.0.
 
 ## Webpack 5 vs Webpack 4: Small Application benchmark
 
