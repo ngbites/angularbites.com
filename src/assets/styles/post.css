@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 .post {
-  max-width: 750px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
 .post .post-title {
   @apply font-sans mb-2;
 
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   width: 1050px;
   position: relative;
-  left: -150px;
+  left: -250px;
   text-align: center;
 }
 
@@ -28,19 +28,19 @@
 }
 
 .post h2 {
-  @apply font-semibold text-3xl mt-8 pb-3;
+  @apply font-semibold text-3xl pb-5 mt-8;
 }
 
 .post h3 {
-  @apply font-semibold text-2xl mt-8 pb-2 font-sans;
+  @apply font-semibold text-2xl mt-6 pb-2 font-sans;
 }
 
 .post h4 {
-  @apply font-semibold text-xl mt-8 pb-2 font-sans;
+  @apply font-semibold text-xl mt-4 pb-2 font-sans;
 }
 
 .post p {
-  @apply leading-8 text-lg mb-5 font-serif;
+  @apply leading-8 text-lg mb-10 font-serif;
 
   color: var(--color);
 }
@@ -58,6 +58,10 @@
   @apply leading-8 text-lg my-2 font-serif;
 
   color: var(--color);
+}
+
+.post li > p {
+  @apply mb-2;
 }
 
 .post .user-image img {

@@ -1,12 +1,15 @@
 const htmlmin = require('html-minifier');
 const dateFns = require('date-fns');
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+
+const codeblocks = require('@code-blocks/eleventy-plugin');
+const charts = require('@code-blocks/charts');
+const prism = require('@code-blocks/prism');
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addLayoutAlias('post', 'layouts/post.ejs');
+
+  eleventyConfig.addPlugin(codeblocks([charts, prism]));
 
   eleventyConfig.setEjsOptions({
     rmWhitespace: true,

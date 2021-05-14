@@ -68,5 +68,10 @@
     "*.json": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "@code-blocks/charts": "^0.1.6",
+    "@code-blocks/eleventy-plugin": "^0.1.7",
+    "@code-blocks/prism": "^0.1.6"
   }
 }

@@ -11,7 +11,7 @@ eleventyComputed:
   title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
 ---
 
-<div class="container mx-auto py-8">
+<div class="container mx-auto py-4">
     <%- include /layouts/header.ejs %>
 
     <div class="mt-8 posts-list">
