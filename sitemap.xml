@@ -2,59 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://angularbites.com/writing-scalabale-typescript/</loc>
+<loc>https://angularbites.com/posts/2019-05-04-writing-scalabale-typescript/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/onpush-change-detection-for-faster-angular-apps/</loc>
+<loc>https://angularbites.com/posts/2019-15-04-onpush-change-detection-for-faster-angular-apps/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/enforce-your-team-style-with-prettier-and-tslint/</loc>
+<loc>https://angularbites.com/posts/2019-17-04-enforce-your-team-style-with-prettier-and-tslint/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/multi-environment-setup-for-your-angular-app/</loc>
+<loc>https://angularbites.com/posts/2019-19-04-multi-environment-setup-for-your-angular-app/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/building-an-enterprise-grade-angular-project-structure/</loc>
+<loc>https://angularbites.com/posts/2019-25-04-building-an-enterprise-grade-angular-project-structure/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/practical-rxjs-and-angular/</loc>
+<loc>https://angularbites.com/posts/2019-26-04-practical-rxjs-and-angular/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/frameworks-dont-magically-make-your-code-good/</loc>
+<loc>https://angularbites.com/posts/2019-27-04-frameworks-dont-magically-make-your-code-good/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/understanding-angular-modules/</loc>
+<loc>https://angularbites.com/posts/2019-29-04-understanding-angular-modules/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/state-management-with-ngrx-introduction/</loc>
+<loc>https://angularbites.com/posts/2019-02-05-state-management-with-ngrx-introduction/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/architecting-the-store-in-ngrx/</loc>
+<loc>https://angularbites.com/posts/2019-05-05-architecting-the-store-in-ngrx/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/abstracting-state-with-ngrx-facades/</loc>
+<loc>https://angularbites.com/posts/2019-27-05-abstracting-state-with-ngrx-facades/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/a-simple-countdown-with-rx-js/</loc>
+<loc>https://angularbites.com/posts/2019-06-05-a-simple-countdown-with-rx-js/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/building-side-effects-in-ngrx/</loc>
+<loc>https://angularbites.com/posts/2019-06-05-building-side-effects-in-ngrx/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/building-scalable-multi-platform-projects-with-angular-and-nx/</loc>
+<loc>https://angularbites.com/posts/2019-08-25-building-scalable-multi-platform-projects-with-angular-and-nx/</loc>
 </url>
 
 <url>
@@ -62,31 +62,27 @@
 </url>
 
 <url>
-<loc>https://angularbites.com/async-rendering-with-a-single-rx-operator/</loc>
+<loc>https://angularbites.com/posts/2020-11-07-async-rendering-with-a-single-rx-operator/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/build-typescript-libraries-for-the-browser-with-nx/</loc>
+<loc>https://angularbites.com/posts/2020-26-07-build-typescript-libraries-for-the-browser-with-nx/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/better-code-with-typescript-aliases/</loc>
+<loc>https://angularbites.com/posts/2020-26-07-better-code-with-typescript-aliases/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/setters-vs-ng-on-changes/</loc>
+<loc>https://angularbites.com/posts/2020-07-30-setters-vs-ng-on-changes/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/intersection-observer-with-angular/</loc>
+<loc>https://angularbites.com/posts/2020-08-01-intersection-observer-with-angular/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/angular-where-to-put-models/</loc>
-</url>
-
-<url>
-<loc>https://angularbites.com/</loc>
+<loc>https://angularbites.com/posts/2020-03-08-angular-where-to-put-models/</loc>
 </url>
 
 <url>
@@ -98,27 +94,15 @@
 </url>
 
 <url>
-<loc>https://angularbites.com/free-angular-code-review/</loc>
+<loc>https://angularbites.com/posts/2021-07-02-how-to-organize-nx-modules-with-angular/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/how-to-organize-nx-modules-with-angular/</loc>
+<loc>https://angularbites.com/posts/upgrading-to-angular-and-firebase-v9/</loc>
 </url>
 
 <url>
-<loc>https://angularbites.com/unit-testing-principles-with-angular/</loc>
-</url>
-
-<url>
-<loc>https://angularbites.com/streamline-code-typescript-assert/</loc>
-</url>
-
-<url>
-<loc>https://angularbites.com/webpack-5-angular12/</loc>
-</url>
-
-<url>
-<loc>https://angularbites.com/performant-angular-apps/</loc>
+<loc>https://angularbites.com/posts/2021-14-05-webpack-5-angular12/</loc>
 </url>
 
 </urlset>
